@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="app">
+        <div class="generator">
+            <h2 class="password"></h2>
+
+            <div class="input-container">
+                <label for="pwLength">pwLength</label>
+                <input autoComplete="off" value="5" min="5" max="128" type="number" name="pwLength">
+            </div>
+
+            <div class="input-container">
+                <label for="minDigits">minDigits</label>
+                <input autoComplete="off" value="0" min="0" max="9" type="number" name="minDigits">
+            </div>
+
+            <div class="input-container">
+                <label for="minSpecials">minSpecials</label>
+                <input autoComplete="off" value="0" min="0" max="9" type="number" name="minSpecials">
+            </div>
+
+            <div class="input-container">
+                <label for="uppercase">uppercase</label>
+                <input autoComplete="off" type="checkbox" name="uppercase" checked>
+            </div>
+
+            <div class="input-container">
+                <label for="lowercase">lowercase</label>
+                <input autoComplete="off" type="checkbox" name="lowercase" checked>
+            </div>
+
+            <div class="input-container">
+                <label for="digits">digits</label>
+                <input autoComplete="off" type="checkbox" name="digits" checked>
+            </div>
+
+            <div class="input-container">
+                <label for="specials">specials</label>
+                <input autoComplete="off" type="checkbox" name="specials" checked>
+            </div>
+
+            <div class="input-container">
+                <label for="avoidAmbiguous">avoid ambiguous</label>
+                <input autoComplete="off" type="checkbox" name="avoidAmbiguous" checked>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
